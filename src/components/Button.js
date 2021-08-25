@@ -1,7 +1,8 @@
-const Button = ({ title, onClick, id }) => {
+const Button = ({ title, onClick, id, className }) => {
   if (!id) id = 'button'
+  if (!className) className = 'button'
   return (
-    <button id={id} onClick={onClick}>
+    <button className={className} id={id} onClick={onClick}>
       {title}
     </button>
   )

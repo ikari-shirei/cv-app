@@ -2,47 +2,45 @@ function ShowCv({ generalInfoKeys, educationKeys, expKeys }) {
   return (
     <>
       <div className="general-info-class">
-        <h1>{generalInfoKeys.name}</h1>
-        <div>
-          <p>{generalInfoKeys.number}</p>
-          <p>{generalInfoKeys.mail}</p>
-          <p>{generalInfoKeys.location}</p>
+        <h1 className="general-name">{generalInfoKeys.name}</h1>
+        <div className="general-items-container">
+          <p className="general-items">{generalInfoKeys.number} |</p>
+          <p className="general-items">{generalInfoKeys.mail} |</p>
+          <p className="general-items">{generalInfoKeys.location}</p>
         </div>
-        <p>{generalInfoKeys.textarea}</p>
+        <p className="general-textarea">{generalInfoKeys.textarea}</p>
       </div>
       <div className="education-class">
+        <h1 className="header-show">Education</h1>
         {educationKeys.map((obj) => {
           return (
             <div key={obj.id}>
-              <div>
-                <div>
-                  <p>{obj.startDate}</p>
-                  <p>{obj.endDate}</p>
-                </div>
-                <p>{obj.school}</p>
+              <div className="items-container">
+                <p className="items">{obj.startDate} -</p>
+                <p className="items">{obj.endDate} |</p>
+                <p className="items">{obj.school}</p>
               </div>
-              <p>{obj.degree}</p>
+              <p className="education-degree">{obj.degree}</p>
             </div>
           )
         })}
       </div>
       <div className="experience-class">
+        <h1 className="header-show">Experience</h1>
         {expKeys.map((obj) => {
           return (
             <div key={obj.id}>
-              <div>
-                <div>
-                  <p>{obj.startDate}</p>
-                  <p>{obj.endDate}</p>
-                </div>
-                <p>{obj.company}</p>
+              <div className="items-container">
+                <p className="items">{obj.startDate} -</p>
+                <p className="items">{obj.endDate} |</p>
+                <p className="items">{obj.company}</p>
               </div>
               <div>
-                <div>
-                  <p>{obj.position}</p>
-                  <p>{obj.location}</p>
+                <div className="bold-items-container ">
+                  <p className="bold-items">{obj.position} |</p>
+                  <p className="bold-items">{obj.location}</p>
                 </div>
-                <p>{obj.textarea}</p>
+                <p className="experience-textarea">{obj.textarea}</p>
               </div>
             </div>
           )

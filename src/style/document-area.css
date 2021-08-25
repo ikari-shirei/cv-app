@@ -1,0 +1,74 @@
+.document-area {
+  width: auto;
+  margin: 8px 16px;
+  padding: 16px;
+  color: var(--mainBlue);
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid var(--mainBlue);
+  font-size: 12px;
+}
+
+.general-name {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+}
+
+.general-items {
+  font-style: italic;
+  font-weight: 300;
+  padding-right: 4px;
+  margin: 0;
+}
+
+.general-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.general-textarea {
+  font-weight: 400;
+  margin: 16px 0;
+}
+
+.header-show {
+  font-weight: 400;
+}
+
+.items {
+  font-style: italic;
+  font-weight: 300;
+  padding-right: 4px;
+  margin: 0;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.education-degree {
+  padding-left: 16px;
+  margin: 8px 0;
+}
+
+.bold-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px 0;
+  padding-left: 16px;
+}
+
+.bold-items {
+  font-weight: 400;
+  padding-right: 4px;
+  margin: 0;
+}
+
+.experience-textarea {
+  margin: 8px 0;
+  padding-left: 16px;
+  font-weight: 300;
+}

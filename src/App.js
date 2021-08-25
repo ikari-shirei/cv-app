@@ -6,34 +6,38 @@ import Button from './components/Button'
 import uniqid from 'uniqid'
 import ShowCv from './components/ShowCv'
 import Experience from './components/Experience'
+import './style/form-area.css'
+import './style/document-area.css'
 
 function App() {
   const [generalInfo, setGeneralInfo] = useState({
-    name: 'name',
-    number: 'number',
+    name: 'John Doe',
+    number: '999 999 99 99',
     mail: 'example@gmail.com',
-    location: 'location',
-    textarea: 'describe yourself',
+    location: 'Liverpool/UK',
+    textarea:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a commodo lorem. Suspendisse potenti. Donec consequat faucibus dolor egestas commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque eu nulla lectus. Vivamus nec velit eros.',
   })
 
   const [educationInfo, setEducationInfo] = useState([
     {
-      startDate: 'start date',
-      endDate: 'end date',
-      school: 'school',
-      degree: 'degree',
+      startDate: '2018',
+      endDate: '2020',
+      school: 'Tokyo University',
+      degree: 'Mechanical Engineering',
       id: uniqid(),
     },
   ])
 
   const [expInfo, setExpInfo] = useState([
     {
-      startDate: 'start date',
-      endDate: 'end date',
-      company: 'company',
-      position: 'position',
-      location: 'location',
-      textarea: 'textarea',
+      startDate: '2020',
+      endDate: 'Now',
+      company: 'The Odin Company',
+      position: 'Front End Developer',
+      location: 'US',
+      textarea:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a commodo lorem. Suspendisse potenti. ',
       id: uniqid(),
     },
   ])
@@ -256,17 +260,29 @@ function App() {
   return (
     <div className="App">
       <div className="form-area">
-        <Header title="General Information" />
+        <Header title="General Information" className="input-header" />
         <GeneralInformation
           info={generalInfo}
           onChange={handleInputGeneralInfo}
         />
-        <Header title="Education" />
+        <Header title="Education" className="input-header" />
         <div>{education}</div>
-        <Button title="Add" onClick={educationAddButton} />
-        <Header title="Experience" />
+        <div className="add-button-container">
+          <Button
+            title="Add"
+            onClick={educationAddButton}
+            className="add-button"
+          />
+        </div>
+        <Header title="Experience" className="input-header" />
         <div>{experience}</div>
-        <Button title="Add" onClick={experienceAddButton} />
+        <div className="add-button-container">
+          <Button
+            title="Add"
+            onClick={experienceAddButton}
+            className="add-button"
+          />
+        </div>
       </div>
       <div className="document-area">
         <ShowCv
