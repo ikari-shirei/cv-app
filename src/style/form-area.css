@@ -38,6 +38,7 @@ textarea {
   border: 0;
   background-color: var(--mainBlue);
   color: var(--mainWhite);
+  cursor: pointer;
 }
 
 .delete-button {
@@ -46,6 +47,7 @@ textarea {
   border: 1px solid var(--mainBlue);
   background-color: var(--mainWhite);
   color: var(--mainBlue);
+  cursor: pointer;
 }
 
 .input-header {
