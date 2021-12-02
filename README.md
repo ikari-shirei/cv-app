@@ -8,3 +8,8 @@
 
 ## Sources
 * [The Odin Project - CV Application](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/cv-application)
+
+## Project Status
+```diff
+- Have style problem on Chromium based browsers.
+```
