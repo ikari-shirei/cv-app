@@ -11,5 +11,5 @@
 
 ## Project Status
 ```diff
-- Have style problem on Chromium based browsers.
+- It has style problem on Chromium based browsers.
 ```
